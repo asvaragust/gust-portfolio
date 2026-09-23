@@ -30,6 +30,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: var(--color-text-primary);
+    background-color: var(--color-bg-app);
 }
 
 h1, h2, h3 {
@@ -59,7 +60,7 @@ html{
 
     font-size: clamp(0.6rem, 1.6vw, 1rem);
 
-    padding: 8px;
+    padding: 8px 16px;
 
     min-height: 15vh;
 
@@ -175,6 +176,109 @@ html{
     padding: 8px;
     border-radius: 8px;
 }
+
+/* ABOUT */
+#about {
+    display: grid;
+    place-items: center;    
+    margin: 32px 0;
+}
+
+#about img {
+    width: clamp(50px, calc(150px - 1vw),150px);
+}
+
+#about-hook{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    background-color: var(--color-bg-surface);
+    box-shadow: 4px 0px 16px rgba(0, 0, 0, 0.493);
+
+    margin: 24px;
+    padding: 16px;
+
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+#about-hook article{
+    width: 70vw;
+}
+
+#about-services h2, #about-content-heading{
+    display: inline;
+    text-align: center;
+
+    padding: 16px;
+    margin: 32px;
+
+    color: var(--color-text-inverse);
+    background-color: var(--primary);
+
+    border-radius: 8px;
+}
+
+#about-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.about-services-cards{
+    width: 80vw;
+    background-color: var(--color-bg-surface);
+    padding: 24px;
+    margin: 8px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+    box-shadow: 4px 0px 16px rgba(0, 0, 0, 0.247);
+
+}
+
+.about-content{
+    width: 80vw;
+
+    border-radius: 16px;
+    border-left: 4px solid var(--primary);
+
+    padding: 16px;
+    margin: 32px 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-bg-surface);
+}
+
+.about-content div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-content h3{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.about-content figure{
+    font-size: clamp(60px, 8vw, 150px);
+    text-align: center;
+}
+
+.about-content p{
+    padding: 16px;
+    font-size: clamp(12px, 2vw, 16px);
+    width: 60vw;
+}
+
+
 
 @media (max-width:992px){
     /* HOME */
